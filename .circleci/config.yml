@@ -1,0 +1,11 @@
+version: 2
+jobs:
+  build-and-test:
+    docker:
+      - image: circleci/node:lts
+    working_directory: ~/repo
+    steps:
+      - checkout
+      - run:
+          namae: Install Deps
+          command: yarn
