@@ -22,9 +22,9 @@ jobs:
             - run:
                 name: unit test
                 command: yarn test
-            - run: build
+            - run: yarn build
             - store_artifacts:
-                paths: build
+                path: build
             
             
 
