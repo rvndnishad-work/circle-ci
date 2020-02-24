@@ -10,6 +10,7 @@ jobs:
           namae: Install Deps
           command: yarn
 workflow:
-  version: 2
-  test:
-    jobs: build_and_test
+    version: 2
+    test:
+        jobs:
+            build_and_test          
